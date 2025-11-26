@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, callback
@@ -69,7 +70,9 @@ class APRSSensorBase(SensorEntity):
         self.callsign = callsign
         self._data = data
         self._attr_name = f"{callsign} {self.sensor_type.title()}"
-        self._attr_unique_id = f"lora_aprs_{callsign}_{self.sensor_type}".lower()
+        self._attr_unique_id = (
+            f"lora_aprs_{callsign}_{self.sensor_type}".lower()
+        )
 
     def update_from_aprs(self, data: dict):
         self._data = data
