@@ -1,0 +1,14 @@
+{
+  "title": "LoRa APRS MQTT Monitor",
+  "config": {
+    "step": {
+      "user": {
+        "title": "LoRa APRS MQTT Monitor Setup",
+        "description": "Enter the MQTT topic where LoRa APRS messages are sent.",
+        "data": {
+          "mqtt_topic": "MQTT Topic"
+        }
+      }
+    }
+  }
+}

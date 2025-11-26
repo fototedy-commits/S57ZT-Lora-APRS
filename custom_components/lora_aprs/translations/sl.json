@@ -1,0 +1,14 @@
+{
+  "title": "LoRa APRS MQTT Merilnik",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nastavitev LoRa APRS MQTT Monitor",
+        "description": "Vnesi MQTT topic, kjer se pojavljajo LoRa APRS sporočila.",
+        "data": {
+          "mqtt_topic": "MQTT Topic"
+        }
+      }
+    }
+  }
+}
